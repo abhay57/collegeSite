@@ -1,9 +1,25 @@
 <style>
-    img{
-        max-width: 100%;
-        height: 100%;
+    *{
+        box-sizing: border-box;
+    }
+    @media (max-width: 75em){
+        html{
+            font-size: 70%;
+        }
     }
     
+    @media (max-width: 61.25em){
+        html{
+            font-size: 60%;
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 2px;
+        padding: 1px;
+        object-position: center;
+    }
     a:hover{
         transform: scale(1.03);
     }
@@ -17,7 +33,7 @@
         height: 2rem;
         border-radius: 3px 3px 0px 0px;
         text-align: center;
-        padding: auto;
+        padding: 1px;
         margin: 0 0 0 0;
     }
     .campus-life{
@@ -29,38 +45,41 @@
         display: grid;
         grid-template-rows: auto auto; 
         width: 100%;
-        max-width: 35vw;
+        max-width: 40vw;
     }
     .photo-grid{
         display: grid;
-        grid-template-columns: repeat(4,auto);
-        grid-gap: 2px;
+        grid-template-columns: repeat(auto-fill, 10vw);
+        /*grid-gap: 2px;*/
     }
     @media(max-width: 700px){
         .photo-grid{
             grid-template-columns: repeat(3, auto);
         }
+        .view-more-link{
+            position: relative;     
+            top: -5vw;
+            left: 28vw;
+        }
     }
     
-    .campus_img{
-        height: 100%;
-        width: 100%;
-        border-radius: 2px;
+    @media(min-width: 700px){
+        .view-more-link{
+            position: relative;     
+            top: -4vw;
+            left: 31.5vw;
+        }
     }
     
     .view-more{
-        display: flex;
-        justify-content: center;
-        font-size: 0.8rem;
-        margin: 1rem;
-        background-color: #2167A7;
-        color: white;
-        padding: 4px;
-        border-radius: 3px;
+        font-size: 0.6rem;
         width: 100%;
-        max-width: 6rem;
+        height: 100%;
+        background-image: linear-gradient(62deg, #7e8289 0%, #8a8b90 100%);
+        border-radius: 2px;
     }
-    .view-more-gallery{
+    .view-more-link{
+        padding: auto;
         color: white;
     }
     
@@ -79,14 +98,11 @@
 <html>
     <head>
         <title>clubs page</title>
-        <script src="https://cdn.tailwindcss.com"></script>
     </head>
     
     <body>
         <section class = "campus-life">
-        <div class = "clubs">
-            
-        </div>
+        <div class = "clubs"></div>
         
         <div class = "photo-gallery">
             <h2 class = "heading">Photo Gallery</h2>
@@ -126,19 +142,17 @@
                 <img src = "https://www.nitj.ac.in/images/slider/02_76441.png"
                      class = "campus_img"
                      alt = "campus image">
-                <img src = "https://www.nitj.ac.in//images/photo_gallery/2_25_77588.JPG"
-                     class = "campus_img"
-                     alt = "campus image">
+                
+                <div class="view-more">
+                    
+                </div>
                 
             </div>
-            
-            <div class="view-more">
-                <a href = ""
-               class = "view-more-gallery"
-               target = "_blank">
-                VIEW MORE
-            </a>
-            </div>
+            <a href = ""
+                    class = "view-more-link"
+                    target = "_blank">
+                    VIEW MORE
+                </a>
             
             <div class = "campus-view">
                 <h2 class = "heading">360 view of campus</h2>
