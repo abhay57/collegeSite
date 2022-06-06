@@ -45,7 +45,7 @@
         display: grid;
         grid-template-rows: auto auto; 
         width: 100%;
-        max-width: 40vw;
+        /* max-width: 35vw; */
     }
     .photo-grid{
         display: grid;
@@ -101,71 +101,84 @@
     </head>
     
     <body>
-        <section class = "campus-life">
-        <div class = "clubs"></div>
+
+        <section class = "grid grid-cols-1 gap-16 md:grid-cols-2 mx-16 my-8">
+            <div class = "bg-bgBlue">
+                <div class="clubOne">
+                    <h1>R-Tist Club</h1>
+                    <div class="info grid grid-cols-2">
+                        <img src="images/rtistClub.png">
+                        <div>
+                            <p>Official dance club of NITJ. Have participated in many competitions and won more than that. Always been a showstopper. Energetic dance performance with concep...</p>
+                            <a class="hover">Read more</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         
-        <div class = "photo-gallery">
-            <h2 class = "heading">Photo Gallery</h2>
-            <div class = "photo-grid">
-                <a href="https://img.collegepravesh.com/2014/09/NIT-JALANDHAR.jpg">
-                    <img src = "https://img.collegepravesh.com/2014/09/NIT-JALANDHAR.jpg"
-                    class = "campus-img"
-                     alt = "campus image">
-                </a>
-                <img src = "https://www.nitj.ac.in//images/menu_content/administration.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in/images/menu_content/160331051821am60694.JPG"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in/nitj_files/links/IT-Building_45818.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in//images/photo_gallery/01_24_58998.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in/images/menu_content/dsc_0707.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in//images/photo_gallery/Republic_Day_2021_2_26426_35_28452.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://qph.cf2.quoracdn.net/main-qimg-6519c248b6c531c2404a7ec444e7bceb.webp"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/7/2021_7$largeimg_2116964370.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in/images/menu_content/dsc_0620.jpg"
-                     class = "campus_img"
-                     alt = "campus image">
-                <img src = "https://www.nitj.ac.in/images/slider/02_76441.png"
-                     class = "campus_img"
-                     alt = "campus image">
-                
-                <div class="view-more">
+            <div class = "photo-gallery">
+                <h2 class = "heading">Photo Gallery</h2>
+                <div class = "photo-grid">
+                    <a href="https://img.collegepravesh.com/2014/09/NIT-JALANDHAR.jpg">
+                        <img src = "https://img.collegepravesh.com/2014/09/NIT-JALANDHAR.jpg"
+                        class = "campus-img"
+                        alt = "campus image">
+                    </a>
+                    <img src = "https://www.nitj.ac.in//images/menu_content/administration.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in/images/menu_content/160331051821am60694.JPG"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in/nitj_files/links/IT-Building_45818.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in//images/photo_gallery/01_24_58998.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in/images/menu_content/dsc_0707.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in//images/photo_gallery/Republic_Day_2021_2_26426_35_28452.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://qph.cf2.quoracdn.net/main-qimg-6519c248b6c531c2404a7ec444e7bceb.webp"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://englishtribuneimages.blob.core.windows.net/gallary-content/2021/7/2021_7$largeimg_2116964370.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in/images/menu_content/dsc_0620.jpg"
+                        class = "campus_img"
+                        alt = "campus image">
+                    <img src = "https://www.nitj.ac.in/images/slider/02_76441.png"
+                        class = "campus_img"
+                        alt = "campus image">
+                    
+                    <div class="view-more">
+                        
+                    </div>
                     
                 </div>
-                
-            </div>
-            <a href = ""
-                    class = "view-more-link"
-                    target = "_blank">
-                    VIEW MORE
-                </a>
-            
-            <div class = "campus-view">
-                <h2 class = "heading">360 view of campus</h2>
-                
                 <a href = ""
-                   class = "three60-view"
-                   target = "_blank">
-                    <img src = "https://www.nitj.ac.in/WREC21/assets/img/NIT-JALANDHAR.jpg"
-                         class = "view-img"
-                         alt = "360 view of campus">
-                </a>
+                        class = "view-more-link"
+                        target = "_blank">
+                        VIEW MORE
+                    </a>
+                
+                <div class = "campus-view">
+                    <h2 class = "heading">360 view of campus</h2>
+                    
+                    <a href = ""
+                    class = "three60-view"
+                    target = "_blank">
+                        <img src = "https://www.nitj.ac.in/WREC21/assets/img/NIT-JALANDHAR.jpg"
+                            class = "view-img"
+                            alt = "360 view of campus">
+                    </a>
+                </div>
             </div>
-        </div>
             
         </section>
         
