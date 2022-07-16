@@ -10,6 +10,20 @@
     </head>
 
     <style>
+        .heading{
+            text-align: center;
+            margin: 2.5rem auto;
+            padding: 0 10vw;
+        }
+
+        @media(max-width : 800px){
+            .container-fluid{
+                max-width: 600px;
+            }
+        }
+        .container-fluid{
+            padding: 0 10vw;
+        }
         .item{
             transition: .25s ease-in-out;
         }
@@ -22,6 +36,9 @@
     </style>
 
     <body>
+        <div class="heading">
+            <h1>Image Gallery</h1>
+        </div>
         
         <div class="container-fluid">
 
